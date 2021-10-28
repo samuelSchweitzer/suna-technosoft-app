@@ -8,6 +8,10 @@ const Header = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", changeBackgroundColor);
+
+    return () => {
+      window.removeEventListener("scroll", changeBackgroundColor);
+    };
   }, []);
 
   const changeBackgroundColor = () => {

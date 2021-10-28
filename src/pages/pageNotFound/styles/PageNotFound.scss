@@ -1,0 +1,29 @@
+@import "../../../variables/Variables.scss";
+
+.main-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f0;
+
+  .inner-wrapper {
+    h3 {
+      color: $mediumBlack;
+      font-size: 24px;
+    }
+
+    .redirect-btn-wrapper {
+      width: 100px;
+      margin: 0 auto;
+      margin-top: 20px;
+
+      .redirect-btn {
+        background-color: $primary;
+        color: $white;
+        border: none;
+        padding: 10px 20px;
+      }
+    }
+  }
+}

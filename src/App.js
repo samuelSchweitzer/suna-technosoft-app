@@ -13,6 +13,7 @@ const App = () => {
         <Switch>
           <Route path="/" component={Home} exact />
           <Route path="/courses/:slug" component={CourseDetails} />
+          <Route path="/404" component={PageNotFound} />
           <Route component={PageNotFound} />
         </Switch>
       </ScrollToTop>

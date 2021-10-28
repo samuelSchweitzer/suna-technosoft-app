@@ -20,18 +20,22 @@ const CourseDetails = (props) => {
         return null;
 
       default:
+        props.history.push("/404");
         return null;
     }
-  }, [courseCategory]);
+  }, [courseCategory, props.history]);
 
   const renderCourses = () => {
-    return courses[courseCategory].map((course) => (
-      <div key={course.id} className="course-card">
-        <img src={course.image} alt={course.title} />
-        <h3 className="course-title">{course.title}</h3>
-        {/* <p className="course-content">{course.content}</p> */}
-      </div>
-    ));
+    return (
+      bannerTitle !== "" &&
+      courses[courseCategory].map((course) => (
+        <div key={course.id} className="course-card">
+          <img src={course.image} alt={course.title} />
+          <h3 className="course-title">{course.title}</h3>
+          {/* <p className="course-content">{course.content}</p> */}
+        </div>
+      ))
+    );
   };
 
   return (
