@@ -1,0 +1,40 @@
+/* Colors */
+/* Fonts */
+.about-wrapper {
+  padding: 30px 0 90px 0;
+}
+
+.about-wrapper .content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about-wrapper .left-content,
+.about-wrapper .right-content {
+  width: 48%;
+}
+
+.about-wrapper .left-content img {
+  width: 100%;
+  height: auto;
+}
+
+.about-wrapper .right-content p:first-child {
+  color: #6d6d6d;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.04rem;
+}
+
+.about-wrapper .right-content p {
+  margin-bottom: 20px;
+}
+
+.about-wrapper .right-content p:last-child {
+  margin: 0;
+}
+/*# sourceMappingURL=About.css.map */

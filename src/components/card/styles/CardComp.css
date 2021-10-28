@@ -1,0 +1,37 @@
+/* Colors */
+/* Fonts */
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: -110px;
+  margin-bottom: 50px;
+}
+.cards-wrapper .card {
+  width: 100%;
+  padding: 40px 20px 30px 20px;
+  transition: all 0.5s;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+}
+.cards-wrapper .card .card-icon {
+  width: 64px;
+  height: 100%;
+  margin: 0 auto;
+}
+.cards-wrapper .card .card-title {
+  text-align: center;
+  color: #232323;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: "Fira Sans", sans-serif;
+  margin: 15px 0;
+}
+.cards-wrapper .card .card-content {
+  text-align: center;
+  color: #6d6d6d;
+  font-family: "Rubik", sans-serif;
+}
+.cards-wrapper .card:hover {
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}/*# sourceMappingURL=CardComp.css.map */

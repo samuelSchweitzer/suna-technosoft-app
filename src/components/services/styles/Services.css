@@ -1,0 +1,84 @@
+/* Colors */
+/* Fonts */
+.services-wrapper {
+  padding: 60px 0;
+}
+
+.services-wrapper .content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.services-wrapper .content-wrapper .card {
+  width: 49%;
+  height: 100%;
+  background-size: 100% 200%;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, red), color-stop(50%, black));
+  background-image: linear-gradient(to bottom, red 50%, black 50%);
+  -webkit-transition: background-position 1s;
+  transition: background-position 1s;
+}
+
+.services-wrapper .content-wrapper .card .card-icon {
+  width: 64px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.services-wrapper .content-wrapper .card .card-title {
+  text-align: center;
+  color: #232323;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: "Fira Sans", sans-serif;
+  margin: 15px 0;
+}
+
+.services-wrapper .content-wrapper .card .card-content {
+  text-align: center;
+  color: #6d6d6d;
+  font-family: "Rubik", sans-serif;
+}
+
+.services-wrapper .content-wrapper .card:hover .hover-effect {
+  background-position: 0 100%;
+}
+
+.services-wrapper .view-btn {
+  width: 160px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.services-wrapper .view-btn button {
+  background-color: #ff3c00;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.services-wrapper .view-btn button:hover {
+  background-color: #cc3000;
+}
+
+.services-wrapper .overlay-wrapper {
+  width: 200px;
+  height: 100px;
+  background-size: 100% 200%;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, red), color-stop(50%, black));
+  background-image: linear-gradient(to bottom, red 50%, black 50%);
+  -webkit-transition: background-position 1s;
+  transition: background-position 1s;
+}
+
+.services-wrapper .overlay-wrapper:hover {
+  background-position: 0 -100%;
+}
+/*# sourceMappingURL=Services.css.map */
