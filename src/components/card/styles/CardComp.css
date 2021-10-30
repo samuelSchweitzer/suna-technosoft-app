@@ -1,23 +1,32 @@
 /* Colors */
 /* Fonts */
 .cards-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: -110px;
   margin-bottom: 50px;
 }
+
 .cards-wrapper .card {
   width: 100%;
   padding: 40px 20px 30px 20px;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 1px 4px black;
+          box-shadow: 0 1px 4px black;
   border: none;
 }
+
 .cards-wrapper .card .card-icon {
   width: 64px;
   height: 100%;
   margin: 0 auto;
 }
+
 .cards-wrapper .card .card-title {
   text-align: center;
   color: #232323;
@@ -26,12 +35,17 @@
   font-family: "Fira Sans", sans-serif;
   margin: 15px 0;
 }
+
 .cards-wrapper .card .card-content {
   text-align: center;
   color: #6d6d6d;
   font-family: "Rubik", sans-serif;
 }
+
 .cards-wrapper .card:hover {
-  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.15);
-  transform: translateY(-5px);
-}/*# sourceMappingURL=CardComp.css.map */
+  -webkit-box-shadow: 0 15px 15px black;
+          box-shadow: 0 15px 15px black;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+/*# sourceMappingURL=CardComp.css.map */

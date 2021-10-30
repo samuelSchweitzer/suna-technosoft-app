@@ -1,33 +1,170 @@
 /* Colors */
 /* Fonts */
-.contact-section-wrapper {
-  max-width: 1130px;
-  margin: 0 auto;
-  padding: 60px 0;
+.contact-section-container {
+  background-color: #f4f7fc;
 }
 
-.contact-section-wrapper .contact-section-card {
-  width: 70%;
+.contact-section-container .contact-section-wrapper {
+  max-width: 1130px;
+  margin: 0 auto;
+  padding: 90px 0;
+}
+
+.contact-section-container .contact-section-wrapper .contact-section-card {
+  width: 720px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 15px 15px black;
+  box-shadow: 0 15px 15px black;
+}
+
+.contact-section-container
+  .contact-section-wrapper
+  .contact-section-card
+  .contact-card-left-wrapper {
+  background-color: #252628;
+  width: 45%;
+  padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-.contact-section-wrapper .contact-section-card .contact-card-left {
+.contact-section-container
+  .contact-section-wrapper
+  .contact-section-card
+  .contact-card-left-wrapper
+  .contact-card-left {
+  color: #ffffff;
+}
+
+.contact-section-container
+  .contact-section-wrapper
+  .contact-section-card
+  .contact-card-left-wrapper
+  .contact-card-left
+  h3 {
+  margin-bottom: 35px;
+  font-size: 22px;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.contact-section-container
+  .contact-section-wrapper
+  .contact-section-card
+  .contact-card-left-wrapper
+  .contact-card-left
+  .contact-icon-wrapper {
+  margin-bottom: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #f4f4f4;
+  font-size: 15px;
+}
+
+.contact-section-container
+  .contact-section-wrapper
+  .contact-section-card
+  .contact-card-left-wrapper
+  .contact-card-left
+  .contact-icon-wrapper
+  .icon-wrapper {
+  border: 1px solid #6d6d6d;
+  border-radius: 50%;
+  min-width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.contact-section-container
+  .contact-section-wrapper
+  .contact-section-card
+  .contact-card-left-wrapper
+  .contact-card-left
+  .contact-icon-wrapper
+  .icon-wrapper
+  .email,
+.contact-section-container
+  .contact-section-wrapper
+  .contact-section-card
+  .contact-card-left-wrapper
+  .contact-card-left
+  .contact-icon-wrapper
+  .icon-wrapper
+  .location {
+  font-size: 18px;
+}
+
+.contact-section-container
+  .contact-section-wrapper
+  .contact-section-card
+  .contact-card-left-wrapper
+  .contact-card-left
+  .contact-icon-wrapper
+  .icon-wrapper
+  .phone {
+  font-size: 14px;
+}
+
+.contact-section-container
+  .contact-section-wrapper
+  .contact-section-card
+  .contact-card-right {
+  width: 55%;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.contact-section-container
+  .contact-section-wrapper
+  .contact-section-card
+  .contact-card-right
+  h3 {
+  margin-bottom: 25px;
+  font-size: 22px;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.contact-section-container
+  .contact-section-wrapper
+  .contact-section-card
+  .contact-card-right
+  .submit-btn {
   background-color: #ff3c00;
-  width: 50%;
-  padding: 20px;
+  border: none;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
-.contact-section-wrapper .contact-section-card .contact-card-right {
-  width: 50%;
-  padding: 20px;
+.contact-section-container
+  .contact-section-wrapper
+  .contact-section-card
+  .contact-card-right
+  .submit-btn:hover {
+  -webkit-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  transform: scale(1.03);
 }
-
-.contact-section-wrapper .contact-section-card .contact-card-right h3 {
-  margin-bottom: 20px;
-}
-/*# sourceMappingURL=Contact.css.map */
