@@ -20,7 +20,7 @@
       .card-container {
         width: 49%;
         padding: 60px 30px 58px;
-        box-shadow: 0 1px 4px rgb(0 0 0 / 15%);
+        // box-shadow: 0 15px 15px rgba(0, 0, 0, 15%);
         background-size: 100% 200%;
         background-image: linear-gradient(to bottom, $white 50%, $primary 50%);
         -webkit-transition: all 0.5s;
@@ -36,7 +36,7 @@
 
           .card-icon {
             width: 64px;
-            height: 100%;
+            height: auto;
             margin: 0 auto;
           }
 
@@ -57,7 +57,7 @@
         }
 
         &:hover {
-          box-shadow: 0 15px 15px rgb(0 0 0 / 15%);
+          // box-shadow: 0 15px 15px rgba(0, 0, 0, 15%);
           transform: translateY(-5px);
           background-position: 0 100%;
 

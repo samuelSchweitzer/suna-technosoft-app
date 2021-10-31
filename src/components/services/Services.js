@@ -17,7 +17,7 @@ const Services = () => {
       title: "Back End Development",
       category: "backend",
       content:
-        "Cras in nibh iaculis, imperdiet ipsum ut, congue nulla. Donec cursus egestas ante, sed faucibus felis congue quis.",
+        "Deals with coding business logic, calculations, database interactions etc. You will learn everything about Java language right from coding logic to database interaction.",
       icon: backend,
       iconWhite: backendWhite,
       iconColored: backend,
@@ -27,7 +27,7 @@ const Services = () => {
       title: "Front End Development",
       category: "frontend",
       content:
-        "Cras in nibh iaculis, imperdiet ipsum ut, congue nulla. Donec cursus egestas ante, sed faucibus felis congue quis.",
+        "Deals with creating the user interfaces (UI) that the user can see and interact with. You will learn all the core technologies that are in demand to build amazing UIs",
       icon: uiDev,
       iconWhite: uiDevWhite,
       iconColored: uiDev,
