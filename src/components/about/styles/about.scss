@@ -1,0 +1,33 @@
+@import "../../../variables/Variables.scss";
+
+.about-wrapper {
+  padding: 60px 0 90px 0;
+
+  .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .left-content,
+  .right-content {
+    width: 48%;
+  }
+
+  .left-content {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .right-content {
+    p {
+      margin-bottom: 20px;
+      line-height: 26px;
+    }
+
+    p:last-child {
+      margin: 0;
+    }
+  }
+}

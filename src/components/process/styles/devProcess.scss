@@ -1,0 +1,54 @@
+@import "../../../variables/Variables.scss";
+
+.devProcess-container {
+  padding: 60px 0;
+  background-color: #fbfbfb;
+
+  .devProcess-wrapper {
+    max-width: 1130px;
+    margin: 0 auto;
+
+    .process-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+      .process-wrapper {
+        width: 320px;
+        padding: 20px;
+        margin-bottom: 40px;
+        box-shadow: 2px 2px 10px #f1f1f1;
+        position: relative;
+
+        .process-count {
+          position: absolute;
+          top: 10px;
+          font-size: 22px;
+        }
+
+        .process-icon {
+          text-align: center;
+          color: #ff8c00;
+        }
+
+        .process-title {
+          text-align: center;
+          margin: 20px 0;
+          font-size: 20px;
+          font-weight: 600;
+          letter-spacing: 0.03rem;
+        }
+
+        li {
+          margin: 15px 0 0 10px;
+        }
+
+        .process-list-check {
+          font-size: 16px;
+          color: #4bb543;
+          margin-top: -5px;
+        }
+      }
+    }
+  }
+}

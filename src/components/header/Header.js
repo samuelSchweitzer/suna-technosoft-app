@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
-import "./styles/Header.css";
+import SubMenu from "./SubMenu";
+import "./styles/header.css";
 
 const Header = () => {
   const [navbarBg, setNavbarBg] = useState(false);
+  const [showServicesMenu, setShowServicesMenu] = useState(false);
+  const [showTrainingMenu, setShowTrainingMenu] = useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", changeBackgroundColor);
@@ -36,21 +39,31 @@ const Header = () => {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <li>
-              <NavLink to="/">Home</NavLink>
+            <li
+              className="main-menu"
+              onMouseEnter={() => setShowServicesMenu(true)}
+              onMouseLeave={() => setShowServicesMenu(false)}
+            >
+              <span className="main-menu-title">Services</span>
+              {showServicesMenu && <SubMenu target="services" />}
             </li>
 
-            <li>
-              <NavLink to="/">Courses</NavLink>
+            <li
+              className="main-menu"
+              onMouseEnter={() => setShowTrainingMenu(true)}
+              onMouseLeave={() => setShowTrainingMenu(false)}
+            >
+              <span className="main-menu-title">Training</span>
+              {showTrainingMenu && <SubMenu target="training" />}
             </li>
-            <li>
+            {/* <li>
               <NavLink to="/">Blog</NavLink>
-            </li>
+            </li> */}
+            {/* <li>
+              <NavLink to="/">Company</NavLink>
+            </li> */}
             <li>
-              <NavLink to="/">About Us</NavLink>
-            </li>
-            <li>
-              <NavLink to="/">Contact</NavLink>
+              <NavLink to="/contact">Contact</NavLink>
             </li>
           </Nav>
         </Navbar.Collapse>

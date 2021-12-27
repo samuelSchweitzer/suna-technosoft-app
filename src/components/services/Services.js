@@ -1,91 +1,59 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import Title from "../common/title/Title";
-// import webDev from "../../assets/icons/web-development.png";
-import uiDev from "../../assets/icons/ui-design.png";
-import uiDevWhite from "../../assets/icons/ui-design-white.png";
-import backend from "../../assets/icons/backend.png";
-import backendWhite from "../../assets/icons/backend-white.png";
-// import javaWhite from "../../assets/icons/java-white.png";
-import { Card } from "react-bootstrap";
-import "./styles/Services.scss";
+import React from "react";
+import training from "../../assets/icons/training.png";
+import coding from "../../assets/icons/coding.png";
+import outsourcing from "../../assets/icons/outsourcing.png";
+import { Title } from "../common";
+import "./styles/services.scss";
 
 const Services = () => {
-  const [courses, setCourses] = useState([
+  const services = [
     {
       id: 1,
-      title: "Back End Development",
-      category: "backend",
+      title: "Software Development",
       content:
-        "Deals with coding business logic, calculations, database interactions etc. You will learn everything about Java language right from coding logic to database interaction.",
-      icon: backend,
-      iconWhite: backendWhite,
-      iconColored: backend,
+        "We provide software solutions and services to both businesses and individuals.",
+      icon: coding,
     },
     {
       id: 2,
-      title: "Front End Development",
-      category: "frontend",
-      content:
-        "Deals with creating the user interfaces (UI) that the user can see and interact with. You will learn all the core technologies that are in demand to build amazing UIs",
-      icon: uiDev,
-      iconWhite: uiDevWhite,
-      iconColored: uiDev,
+      title: "Software Training",
+      content: "Professional training with real-time projects & assignments.",
+      icon: training,
     },
-  ]);
 
-  const changeIcon = (id) => {
-    const modifiedCourse = courses.map((course) =>
-      course.id === id ? { ...course, icon: course.iconWhite } : course
-    );
-    setCourses(modifiedCourse);
-  };
+    {
+      id: 3,
+      title: "Outsourcing",
+      content:
+        "We specialize in software outsourcing and can handle anything from software upgrades & bug fixes to data migration & content creation.",
+      icon: outsourcing,
+    },
+  ];
 
-  const revertIcon = (id) => {
-    const modifiedCourse = courses.map((course) =>
-      course.id === id ? { ...course, icon: course.iconColored } : course
-    );
-    setCourses(modifiedCourse);
-  };
+  const renderCardsList = () => {
+    return services.map((service) => (
+      <div className="service" key={service.id}>
+        <div className="service-icon-container">
+          <img src={service.icon} className="service-icon" alt="service-icon" />
+        </div>
 
-  const renderCourses = () => {
-    return courses.map((course) => (
-      <div
-        className="card-container"
-        key={course.id}
-        onMouseOver={() => changeIcon(course.id)}
-        onMouseOut={() => revertIcon(course.id)}
-      >
-        <Link to={`/courses/${course.category}`}>
-          <Card>
-            <Card.Img
-              variant="top"
-              src={course.icon}
-              className="card-icon"
-              alt="card-icon"
-            />
-            <Card.Body>
-              <Card.Title className="card-title">{course.title}</Card.Title>
-              <Card.Text className="card-content">{course.content}</Card.Text>
-            </Card.Body>
-          </Card>
-        </Link>
-        {/* <div>
-          <div className="hover-effect"></div>
-        </div> */}
+        <div className="service-content-container">
+          <div className="service-content-inner">
+            <h3 className="service-title">{service.title}</h3>
+            <p className="service-content">{service.content}</p>
+          </div>
+        </div>
       </div>
     ));
   };
 
   return (
-    <div className="services-wrapper">
-      <Title title="// Services" subTitle="What we offer" />
+    <div className="services-container">
+      <div className="services-wrapper">
+        <Title title="// Services" subTitle="What we do" />
 
-      <div className="content-wrapper">{renderCourses()}</div>
-
-      {/* <div className="view-btn">
-        <button>View All Courses</button>
-      </div> */}
+        <div className="services">{renderCardsList()}</div>
+      </div>
     </div>
   );
 };

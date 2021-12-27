@@ -1,9 +1,15 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./app.css";
+import "./styles/app.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import PageNotFound from "./pages/pageNotFound/PageNotFound";
-import CourseDetails from "./pages/CourseDetails.js/CourseDetails";
+import {
+  Home,
+  Course,
+  Contact,
+  PageNotFound,
+  SoftwareDevelopment,
+  SoftwareTraining,
+  Outsourcing,
+} from "./pages";
 import ScrollToTop from "./global/ScrollToTop";
 
 const App = () => {
@@ -12,7 +18,17 @@ const App = () => {
       <ScrollToTop>
         <Switch>
           <Route path="/" component={Home} exact />
-          <Route path="/courses/:slug" component={CourseDetails} />
+          <Route path="/training/:slug" component={Course} />
+          <Route path="/contact" component={Contact} />
+          <Route
+            path="/services/software-development"
+            component={SoftwareDevelopment}
+          />
+          <Route
+            path="/services/software-training"
+            component={SoftwareTraining}
+          />
+          <Route path="/services/outsourcing" component={Outsourcing} />
           <Route path="/404" component={PageNotFound} />
           <Route component={PageNotFound} />
         </Switch>

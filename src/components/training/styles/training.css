@@ -1,0 +1,99 @@
+/* Colors */
+/* Fonts */
+.training-container {
+  background-color: #fcfcfc;
+  color: #ffffff;
+  padding: 60px 0 90px 0;
+}
+
+.training-container .training-wrapper {
+  max-width: 1130px;
+  margin: 0 auto;
+}
+
+.training-container .training-wrapper .sub-title {
+  color: #333;
+}
+
+.training-container .training-wrapper .content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.training-container .training-wrapper .content-wrapper .card-container {
+  width: 49%;
+  padding: 60px 30px 58px;
+  background-size: 100% 200%;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #ffffff), color-stop(50%, #0077b3));
+  background-image: linear-gradient(to bottom, #ffffff 50%, #0077b3 50%);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.training-container .training-wrapper .content-wrapper .card-container .card {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+}
+
+.training-container .training-wrapper .content-wrapper .card-container .card .card-icon {
+  width: 64px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.training-container .training-wrapper .content-wrapper .card-container .card .card-title {
+  text-align: center;
+  color: #000000;
+  font-weight: 600;
+  font-size: 20px;
+  margin: 15px 0;
+}
+
+.training-container .training-wrapper .content-wrapper .card-container .card .card-content {
+  text-align: center;
+  color: #333;
+  font-size: 15px;
+}
+
+.training-container .training-wrapper .content-wrapper .card-container:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  background-position: 0 100%;
+}
+
+.training-container .training-wrapper .content-wrapper .card-container:hover .card .card-title,
+.training-container .training-wrapper .content-wrapper .card-container:hover .card .card-content {
+  color: #ffffff;
+}
+
+.training-container .training-wrapper .content-wrapper .card-container a {
+  text-decoration: none;
+}
+
+.training-container .training-wrapper .view-btn {
+  width: 160px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.training-container .training-wrapper .view-btn button {
+  background-color: #0077b3;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.training-container .training-wrapper .view-btn button:hover {
+  background-color: #cc3000;
+}
+/*# sourceMappingURL=training.css.map */

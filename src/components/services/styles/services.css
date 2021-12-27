@@ -1,0 +1,86 @@
+/* Colors */
+/* Fonts */
+.services-container {
+  padding: 60px 0 130px 0;
+}
+
+.services-container .services-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services-container .services-wrapper .services {
+  width: 60%;
+}
+
+.services-container .services-wrapper .services .service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.services-container .services-wrapper .services .service .service-icon-container {
+  width: 200px;
+  height: 100px;
+  -webkit-box-shadow: 0px 0px 10px #ccc;
+          box-shadow: 0px 0px 10px #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 30px;
+}
+
+.services-container .services-wrapper .services .service .service-icon-container .service-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto;
+}
+
+.services-container .services-wrapper .services .service .service-content-container {
+  width: 100%;
+}
+
+.services-container .services-wrapper .services .service .service-content-container .service-content-inner {
+  width: 80%;
+}
+
+.services-container .services-wrapper .services .service .service-content-container .service-content-inner .service-title {
+  color: #000000;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.03rem;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 10px;
+}
+
+.services-container .services-wrapper .services .service .service-content-container .service-content-inner .service-content {
+  color: #333;
+  font-family: "Montserrat", sans-serif;
+}
+
+.services-container .services-wrapper .services > div:nth-child(2) {
+  margin-left: 150px;
+}
+
+.services-container .services-wrapper .services > div:nth-child(2) .service-content-inner {
+  width: 95% !important;
+}
+
+.services-container .services-wrapper .services > div:nth-child(3) {
+  margin-bottom: 0px !important;
+}
+/*# sourceMappingURL=services.css.map */

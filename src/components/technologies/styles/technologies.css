@@ -1,0 +1,28 @@
+/* Colors */
+/* Fonts */
+.technologies-container {
+  padding: 60px 0;
+}
+
+.technologies-container .technologies-wrapper {
+  max-width: 1130px;
+  margin: 0 auto;
+}
+
+.technologies-container .technologies-wrapper .languages-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.technologies-container .technologies-wrapper .languages-container .languages-wrapper {
+  margin: 0 20px;
+}
+
+.technologies-container .technologies-wrapper .languages-container .languages-wrapper .language-img {
+  width: 50px;
+}
+/*# sourceMappingURL=technologies.css.map */

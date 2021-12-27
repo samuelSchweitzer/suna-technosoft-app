@@ -1,0 +1,64 @@
+@import "../../../variables/Variables.scss";
+
+.course-container {
+  .course-banner-container {
+    background: linear-gradient(100deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)),
+      url("../../../assets/images/bg1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+  }
+
+  .slider-content-wrapper {
+    justify-content: center;
+    text-align: center;
+
+    .carousel-action-btn {
+      margin-top: 10px;
+    }
+  }
+
+  .course-wrapper {
+    max-width: 1130px;
+    margin: 0 auto;
+    padding: 70px 0;
+
+    .course-list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .course-card {
+        text-align: center;
+        width: 250px;
+        margin: 15px;
+        box-shadow: 0 1px 4px rgb(0 0 0 / 15%);
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        padding: 15px 10px;
+
+        img {
+          width: 80px;
+          height: auto;
+        }
+
+        .course-title {
+          margin: 15px 0;
+          color: $black;
+          font-size: 18px;
+          letter-spacing: 0.03rem;
+        }
+
+        .course-content {
+          color: $mediumBlack;
+        }
+
+        &:hover {
+          box-shadow: 0 15px 15px rgb(0 0 0 / 15%);
+        }
+      }
+    }
+  }
+}

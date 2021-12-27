@@ -1,0 +1,45 @@
+@import "../../../variables/Variables.scss";
+
+.appsWeBuild-container {
+  padding: 60px 0;
+  .appsWeBuild-wrapper {
+    max-width: 1130px;
+    margin: 0 auto;
+
+    .sub-title {
+      margin-top: 0;
+    }
+
+    .apps-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // background-color: $primary;
+      // height: 360px;
+      padding: 20px;
+
+      .app-wrapper {
+        width: 300px;
+        height: 200px;
+        margin: 20px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 16px 24px rgb(0 0 0 / 15%);
+        cursor: pointer;
+
+        .app-title {
+          font-size: 18px;
+          text-align: center;
+          color: $mediumBlack;
+          line-height: 30px;
+        }
+      }
+
+      .even {
+        // margin-top: 100px;
+      }
+    }
+  }
+}

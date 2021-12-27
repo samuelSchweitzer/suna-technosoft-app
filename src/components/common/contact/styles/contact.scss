@@ -1,0 +1,117 @@
+@import "../../../../variables/Variables.scss";
+
+.contact-section-container {
+  background-color: #fcfcfc;
+
+  .contact-section-wrapper {
+    max-width: 1130px;
+    margin: 0 auto;
+    padding: 60px 0 90px 0;
+
+    .contact-section-card {
+      // width: 720px;
+      display: flex;
+      align-items: flex-start;
+      margin: 0 auto;
+      // box-shadow: 0 15px 15px rgba(0, 0, 0, 15%);
+
+      .contact-card-left {
+        width: 60%;
+        padding: 20px;
+
+        .contact-form {
+          .row {
+            margin-bottom: 30px !important;
+          }
+
+          .form-control {
+            border: 2px solid #f1f1f1;
+            border-radius: 0px;
+            height: 55px;
+          }
+
+          .textarea-input {
+            height: 200px;
+            resize: none;
+          }
+
+          .submit-btn {
+            background-color: $primary;
+            border: none;
+            transition: all 0.3s;
+            width: 200px;
+            height: 50px;
+
+            &:hover {
+              background-color: $primaryHover;
+            }
+          }
+        }
+
+        .h3 {
+          margin-bottom: 25px;
+          font-size: 22px;
+        }
+      }
+
+      .contact-card-right-wrapper {
+        width: 40%;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .contact-card-right {
+          color: $white;
+
+          .sub-title {
+            margin-bottom: 50px;
+          }
+
+          .contact-icon-wrapper {
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            color: $mediumBlack;
+            font-size: 15px;
+
+            .icon-wrapper {
+              border: 1px solid #f2f2f2;
+              border-radius: 50%;
+              min-width: 50px;
+              height: 50px;
+              margin-right: 10px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: $primary;
+
+              .email,
+              .location {
+                font-size: 22px;
+              }
+
+              .phone {
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.form-control {
+  &:focus {
+    box-shadow: none;
+    border: 2px solid #ccc !important;
+  }
+}
+
+.map-container {
+  .map-iframe {
+    width: 100%;
+    height: 600px;
+  }
+}

@@ -1,0 +1,21 @@
+@import "../../../variables/Variables.scss";
+
+.technologies-container {
+  padding: 60px 0;
+
+  .technologies-wrapper {
+    max-width: 1130px;
+    margin: 0 auto;
+
+    .languages-container {
+      display: flex;
+      justify-content: center;
+      .languages-wrapper {
+        margin: 0 20px;
+        .language-img {
+          width: 50px;
+        }
+      }
+    }
+  }
+}

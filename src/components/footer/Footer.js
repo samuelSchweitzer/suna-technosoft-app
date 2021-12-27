@@ -4,7 +4,7 @@ import facebook from "../../assets/icons/facebook.png";
 import twitter from "../../assets/icons/twitter.png";
 import pinterest from "../../assets/icons/pinterest.png";
 import linkedIn from "../../assets/icons/linkedIn.png";
-import "./styles/Footer.scss";
+import "./styles/footer.scss";
 
 const Footer = () => {
   const socialMedias = [
@@ -18,11 +18,11 @@ const Footer = () => {
       icon: twitter,
       link: "/",
     },
-    {
-      id: 3,
-      icon: pinterest,
-      link: "/",
-    },
+    // {
+    //   id: 3,
+    //   icon: pinterest,
+    //   link: "/",
+    // },
     {
       id: 4,
       icon: linkedIn,
@@ -35,11 +35,6 @@ const Footer = () => {
       <div className="footer-content">
         <div className="item section-1">
           <h1 className="brand">Suna Technosoft</h1>
-          <p className="footer-company-info">
-            Cras in nibh iaculis, imperdiet ipsum ut, congue nulla. Donec cursus
-            egestas ante, sed faucibus felis congue quis.
-          </p>
-
           <div className="social-media-wrapper">
             {socialMedias.map((item) => (
               <a href={item.link} key={item.id}>
@@ -96,24 +91,28 @@ const Footer = () => {
         </div>
 
         <div className="item">
-          <h3>Contact Info</h3>
+          <h3>Contact</h3>
           <div className="contact-wrapper">
-            <span className="bold">Address: </span>
-            <span>7 Division St, New York, NY 10002, USA</span>
+            <p>
+              <span className="bold">Address: </span>1st Floor, VR Chambers,
+              Outer Ring Road, Kadubisinahalli, Marathalli, Bangalore - 560103
+            </p>
           </div>
           <div className="contact-wrapper">
-            <span className="bold">Phone: </span>
-            <span>+91 9922 8866 2233</span>
+            <p>
+              <span className="bold">Phone: </span>+91 80941 56781
+            </p>
           </div>
           <div>
-            <span className="bold">Email: </span>
-            <span>email@sunatech.com</span>
+            <p className="contact-email">
+              <span className="bold">Email: </span>support@sunatechnosoft.com
+            </p>
           </div>
         </div>
       </div>
 
       <div className="copyright">
-        <p>Copyright &#169; Suno Technosoft. All Right Reserved</p>
+        <p>Copyright &#169; Suna Technosoft. All Right Reserved</p>
       </div>
     </div>
   );
