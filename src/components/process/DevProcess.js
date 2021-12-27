@@ -1,8 +1,8 @@
 import React from "react";
 import { BiNotepad, BiCodeAlt, BiBug, BiRocket } from "react-icons/bi";
 import { MdOutlineDesignServices } from "react-icons/md";
-import { RiToolsFill } from "react-icons/ri";
 import { GiCheckMark } from "react-icons/gi";
+import { RiToolsFill } from "react-icons/ri";
 import { Title } from "../common";
 import "./styles/devProcess.scss";
 
